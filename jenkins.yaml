@@ -3,12 +3,6 @@ credentials:
     domainCredentials:
     - credentials:
       - usernamePassword:
-          description: "github username/password"
-          id: "github-user"
-          password: "{AQAAABAAAAAQbG9h+5DQ6sKGT7ieD9MhbIICWUzFndboBpASLJHHS4M=}"
-          scope: GLOBAL
-          username: "ewelina"
-      - usernamePassword:
           id: "github"
           password: "{AQAAABAAAAAQZpNm2PITCmsUMLre3U2/RMbNqUmncIajG1JeAlkvlBU=}"
           scope: GLOBAL

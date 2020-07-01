@@ -4,7 +4,7 @@ credentials:
     - credentials:
       - usernamePassword:
           id: "github1"
-          password: "newpassword"
+          password: "newpassword1"
           scope: GLOBAL
           username: "mukesh10111"
     - credentials:

@@ -22,6 +22,8 @@ jenkins:
       permissions:
       - "Overall/Administer:authenticated"
       - "Overall/Read:anonymous"
+      loggedInUsersCanDoAnything:
+        allowAnonymousRead: false
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false

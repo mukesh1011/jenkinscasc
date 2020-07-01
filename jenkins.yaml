@@ -3,6 +3,12 @@ credentials:
     domainCredentials:
     - credentials:
       - usernamePassword:
+          id: "github1"
+          password: "newpassword"
+          scope: GLOBAL
+          username: "mukesh10111"
+    - credentials:
+      - usernamePassword:
           id: "github"
           password: "{AQAAABAAAAAQZpNm2PITCmsUMLre3U2/RMbNqUmncIajG1JeAlkvlBU=}"
           scope: GLOBAL

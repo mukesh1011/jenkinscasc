@@ -3,7 +3,7 @@ credentials:
     domainCredentials:
     - credentials:
       - usernamePassword:
-          description: "github credentials"
+          description: "github credentials for Mukesh"
           id: "github"
           password: "{AQAAABAAAAAQgOleGpbkshT6sq2BYDM8X133fvscgsbiGA38SfIn1S4=}"
           scope: GLOBAL

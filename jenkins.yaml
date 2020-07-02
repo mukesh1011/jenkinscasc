@@ -13,7 +13,11 @@ credentials:
           id: "github"
           password: "newpassword"
           scope: GLOBAL
-          username: "xyzuser"     
+          username: "xyzuser"
+      - string:
+          id: "myslacktoken"
+          scope: GLOBAL
+          secret: "1111{AQAAABAAAAAgMZgdP7/K+Wzv/qINAfNnG+qHI16jByjr7iH4zfRcuS95EDu50Y8tGQdRcPd6o6Jv}"    
 jenkins:
   agentProtocols:
   - "JNLP4-connect"
@@ -115,6 +119,12 @@ unclassified:
     allPipelines: false
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
     systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+  slackNotifier:
+    baseUrl: "https://myworkspace.slack.com/services/hooks/jenkins-ci/"
+    botUser: false
+    room: "#cloudant-beacon-re"
+    sendAsText: false
+    tokenCredentialId: "slacktoken"  
 tool:
   git:
     installations:

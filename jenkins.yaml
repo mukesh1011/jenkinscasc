@@ -8,6 +8,12 @@ credentials:
           password: "{AQAAABAAAAAQgOleGpbkshT6sq2BYDM8X133fvscgsbiGA38SfIn1S4=}"
           scope: GLOBAL
           username: "mukesh1011"
+      - usernamePassword:
+          description: "github credentials for XYZ"
+          id: "github"
+          password: "newpassword"
+          scope: GLOBAL
+          username: "xyzuser"     
 jenkins:
   agentProtocols:
   - "JNLP4-connect"

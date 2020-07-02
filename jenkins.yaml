@@ -14,6 +14,12 @@ credentials:
           password: "newpassword"
           scope: GLOBAL
           username: "xyzuser"
+      - usernamePassword:
+          description: "github credentials for ABC"
+          id: "githubabc"
+          password: "newpassword"
+          scope: GLOBAL
+          username: "xyzuser"    
       - string:
           id: "myslacktoken"
           scope: GLOBAL
@@ -122,7 +128,7 @@ unclassified:
   slackNotifier:
     baseUrl: "https://myworkspace.slack.com/services/hooks/jenkins-ci/"
     botUser: false
-    room: "#cloudant-beacon-re"
+    room: "#cloudant-testroom"
     sendAsText: false
     tokenCredentialId: "slacktoken"  
 tool:

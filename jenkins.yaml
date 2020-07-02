@@ -3,14 +3,9 @@ credentials:
     domainCredentials:
     - credentials:
       - usernamePassword:
-          id: "github1"
-          password: "newpassword1"
-          scope: GLOBAL
-          username: "mukesh10111"
-    - credentials:
-      - usernamePassword:
+          description: "github credentials"
           id: "github"
-          password: "{AQAAABAAAAAQZpNm2PITCmsUMLre3U2/RMbNqUmncIajG1JeAlkvlBU=}"
+          password: "{AQAAABAAAAAQgOleGpbkshT6sq2BYDM8X133fvscgsbiGA38SfIn1S4=}"
           scope: GLOBAL
           username: "mukesh1011"
 jenkins:
@@ -18,26 +13,18 @@ jenkins:
   - "JNLP4-connect"
   - "Ping"
   authorizationStrategy:
-    globalMatrix:
-      permissions:
-      - "Overall/Administer:authenticated"
-      - "Overall/Read:anonymous"
-      loggedInUsersCanDoAnything:
-        allowAnonymousRead: false
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
-  disabledAdministrativeMonitors:
-  - "jenkins.security.QueueItemAuthenticatorMonitor"
   labelAtoms:
   - name: "master"
-  - name: "master-label"
-  labelString: "master-label"
   markupFormatter: "plainText"
   mode: NORMAL
   myViewsTabBar: "standard"
-  numExecutors: 1
+  numExecutors: 2
   primaryView:
     all:
       name: "all"
@@ -45,28 +32,22 @@ jenkins:
   quietPeriod: 5
   remotingSecurity:
     enabled: true
-  scmCheckoutRetryCount: 3
+  scmCheckoutRetryCount: 0
   securityRealm:
     local:
       allowsSignup: false
       enableCaptcha: false
       users:
       - id: "admin"
-        name: "admin"
+        name: "Mukesh Prajapati"
         properties:
         - "apiToken"
-        - "myView"
         - preferredProvider:
             providerId: "default"
         - "timezone"
         - mailer:
             emailAddress: "admin@admin.com"
   slaveAgentPort: -1
-  systemMessage: |2+
-
-
-    Demo setup for Jenkins Configuration as Code plugin......
-
   updateCenter:
     sites:
     - id: "default"
@@ -88,8 +69,6 @@ unclassified:
     - "jobBuildDiscarder"
   buildStepOperation:
     enabled: false
-  casCGlobalConfig:
-    configurationPath: "/tmp/jenkins.yaml"
   defaultFolderConfiguration:
     healthMetrics:
     - worstChildHealthMetric:
@@ -112,14 +91,14 @@ unclassified:
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
-    hookUrl: "http://34.253.229.120:8080/github-webhook/"
+    hookUrl: "http://34.252.63.49:8080/github-webhook/"
   gitSCM:
     createAccountBasedOnEmail: false
     showEntireCommitSummaryInChanges: false
     useExistingAccountWithSameEmail: false
   location:
     adminAddress: "address not configured yet <nobody@nowhere>"
-    url: "http://34.253.229.120:8080/"
+    url: "http://34.252.63.49:8080/"
   mailer:
     charset: "UTF-8"
     useSsl: false

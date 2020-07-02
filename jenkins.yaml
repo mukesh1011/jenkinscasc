@@ -4,7 +4,7 @@ credentials:
     - credentials:
       - usernamePassword:
           description: "github credentials"
-          id: "github"
+          id: "github1"
           password: "{AQAAABAAAAAQgOleGpbkshT6sq2BYDM8X133fvscgsbiGA38SfIn1S4=}"
           scope: GLOBAL
           username: "mukesh1011"

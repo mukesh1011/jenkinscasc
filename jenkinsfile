@@ -4,7 +4,8 @@ node {
     
     stage('Apply config'){
         echo "Hello"
-        sh "cp -r jenkins.yaml $JENKINS_HOME"
-        ConfigurationAsCode.get().configure()
+        sh "ls -l"
+        //sh "cp -r jenkins.yaml $JENKINS_HOME"
+       //ConfigurationAsCode.get().configure()
     }    
 }

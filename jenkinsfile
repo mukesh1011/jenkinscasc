@@ -1,0 +1,6 @@
+node {
+    
+    stage('Apply config'){
+        echo "Hello"           
+    }    
+}

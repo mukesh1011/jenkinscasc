@@ -7,9 +7,8 @@ node {
         dir('jenkinscasc') {
             git url: 'https://github.com/mukesh1011/jenkinscasc.git'
             sh "ls -l"
+            sh "cp -r jenkins.yaml $JENKINS_HOME"
+            ConfigurationAsCode.get().configure()
         }
-        
-        //sh "cp -r jenkins.yaml $JENKINS_HOME"
-       //ConfigurationAsCode.get().configure()
     }    
 }

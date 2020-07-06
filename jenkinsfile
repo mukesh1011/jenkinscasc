@@ -1,6 +1,10 @@
+import io.jenkins.plugins.casc.ConfigurationAsCode;
+
 node {
     
     stage('Apply config'){
-        echo "Hello"           
+        echo "Hello"
+        sh "cp -r jenkins.yaml $JENKINS_HOME"
+        ConfigurationAsCode.get().configure()
     }    
 }

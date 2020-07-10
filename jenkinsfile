@@ -5,12 +5,12 @@ node {
     stage('Apply config'){
         echo "Hello"
         when { 
-        changeset "jenkins1/jenkins.yaml" 
+            changeset "jenkins1/jenkins.yaml" 
         }
-        git url: 'https://github.com/mukesh1011/jenkinscasc.git'
-        sh "ls -l"
-        sh "cp -r jenkins.yaml $JENKINS_HOME"
-        ConfigurationAsCode.get().configure()
-        }
-    }    
+        steps {
+            git url: 'https://github.com/mukesh1011/jenkinscasc.git'
+            sh "ls -l"
+            sh "cp -r jenkins.yaml $JENKINS_HOME"
+            ConfigurationAsCode.get().configure()
+        }  
 }

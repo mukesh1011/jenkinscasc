@@ -15,7 +15,7 @@ credentials:
           scope: GLOBAL
           username: "xyzuser"
       - usernamePassword:
-          description: "github credentials for ABC"
+          description: "github credentials for ABCq"
           id: "githubabc"
           password: "newpassword"
           scope: GLOBAL

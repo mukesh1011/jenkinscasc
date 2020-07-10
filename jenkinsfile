@@ -1,15 +1,12 @@
 import io.jenkins.plugins.casc.ConfigurationAsCode;
 
 node {
-    
+
     stage('Apply config'){
         echo "Hello"
-       if (changeset "jenkins1/jenkins.yaml") {
-            git url: 'https://github.com/mukesh1011/jenkinscasc.git'
-            sh "ls -l"
-            sh "cp -r jenkins.yaml $JENKINS_HOME"
-            ConfigurationAsCode.get().configure()
-       }     
+        git url: 'https://github.com/mukesh1011/jenkinscasc.git'
+        sh "ls -l"
+        sh "cp -r jenkins.yaml $JENKINS_HOME"
+        ConfigurationAsCode.get().configure()
     }
-        
 }

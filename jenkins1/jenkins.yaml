@@ -9,7 +9,7 @@ credentials:
           username: "mukesh1011"
       - usernamePassword:
           description: "github credentials for XYZ"
-          id: "github"
+          id: "github1"
           password: "newpassword"
           scope: GLOBAL
           username: "xyzuser"

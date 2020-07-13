@@ -18,7 +18,12 @@ credentials:
           id: "githubabc"
           password: "newpassword"
           scope: GLOBAL
-          username: "xyzuser"    
+          username: "xyzuser" 
+      - usernamePassword:
+          description: "github credentials for John"
+          id: "githubjohn"
+          scope: GLOBAL
+          username: "john123"     
       - string:
           id: "myslacktoken"
           scope: GLOBAL

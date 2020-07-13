@@ -5,7 +5,7 @@ node {
         echo "Hello"
         git url: 'https://github.com/mukesh1011/jenkinscasc.git'
         sh "ls -l"
-        sh "cp -r jenkins/jenkins.yaml $JENKINS_HOME"
+        sh "cp -r jenkins1/jenkins.yaml $JENKINS_HOME"
         ConfigurationAsCode.get().configure()
     }
 }

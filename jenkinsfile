@@ -6,7 +6,7 @@ node {
         git url: 'https://github.com/mukesh1011/jenkinscasc.git'
         //sh "ls -l"
         //sh "cp -r jenkins1/jenkins.yaml $JENKINS_HOME"
-        def name1 = ConfigurationAsCode.get().getIconFileName() 
+        def name1 = ConfigurationAsCode.get().getDisplayName() 
         echo "${name1}"
     }
 }

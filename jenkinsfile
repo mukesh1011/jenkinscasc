@@ -8,5 +8,6 @@ node {
         //sh "cp -r jenkins1/jenkins.yaml $JENKINS_HOME"
         def name1 = ConfigurationAsCode.get().getDisplayName() 
         echo "${name1}"
+        ConfigurationAsCode.get().doExport("test.yaml") 
     }
 }

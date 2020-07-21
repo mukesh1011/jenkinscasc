@@ -6,6 +6,7 @@ node {
         git url: 'https://github.com/mukesh1011/jenkinscasc.git'
         //sh "ls -l"
         //sh "cp -r jenkins1/jenkins.yaml $JENKINS_HOME"
-        ConfigurationAsCode.get().getLastTimeLoaded() 
+        def name1 = ConfigurationAsCode.get().getLastTimeLoaded()
+        echo "${name1}"
     }
 }

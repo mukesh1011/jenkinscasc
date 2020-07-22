@@ -15,7 +15,7 @@ node {
           echo $JENKINS_CRUMB
           curl  --cookie $COOKIE_JAR -X POST http://3.250.192.131:8080/configuration-as-code/export  -H $JENKINS_CRUMB -H "Content-Type:text/xml" -u $JENKINS_USER:$JENKINS_TOKEN -o jenkin_config.yaml
         '''
-        comm -23 jenkin_config.yaml jenkins1/jenkins.yaml
+        sh "comm -23 jenkin_config.yaml jenkins1/jenkins.yaml"
         
     }
 }

@@ -6,6 +6,7 @@ node {
         git url: 'https://github.com/mukesh1011/jenkinscasc.git'
         //sh "ls -l"
         //sh "cp -r jenkins1/jenkins.yaml $JENKINS_HOME"
+        sh 'printenv'
         sh """
           export JENKINS_URL=http://3.250.192.131:8080
           export JENKINS_USER=admin

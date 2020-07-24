@@ -7,6 +7,7 @@ node {
         //sh "ls -l"
         //sh "cp -r jenkins1/jenkins.yaml $JENKINS_HOME"
         sh 'printenv'
+        /*
         sh """
           export JENKINS_URL=http://3.250.192.131:8080
           export JENKINS_USER=admin
@@ -17,6 +18,6 @@ node {
           curl  --cookie \$COOKIE_JAR -X POST http://3.250.192.131:8080/configuration-as-code/export  -H \$JENKINS_CRUMB -H "Content-Type:text/xml" -u \$JENKINS_USER:\$JENKINS_TOKEN -o jenkin_config.yaml
         """
         sh "comm -23 jenkin_config.yaml jenkins1/jenkins.yaml"
-        
+        */
     }
 }

@@ -2,7 +2,7 @@ import io.jenkins.plugins.casc.ConfigurationAsCode;
 
 node {
     stage('Apply config'){
-        echo "Hellojkhnkl"
+        echo "Hellojkhvbnvnkl"
         checkout scm
         //sh "ls -l"
         //sh "cp -r jenkins1/jenkins.yaml $JENKINS_HOME"
